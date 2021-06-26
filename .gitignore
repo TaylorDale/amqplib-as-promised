@@ -5,7 +5,6 @@
 
 ts-node-*
 
-/lib/
 /test/mocha.opts
 
 /coverage/
