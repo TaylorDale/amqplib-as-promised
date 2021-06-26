@@ -201,7 +201,7 @@ export class Channel extends EventEmitter {
     if (this.processing) {
       await new Promise((resolve, reject) => {
         this.suspended.push({
-          resolve,
+          resolve: () => {resolve(true);},
           reject,
         })
       })
